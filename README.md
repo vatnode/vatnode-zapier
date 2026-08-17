@@ -21,7 +21,7 @@ Built on the [Zapier Platform CLI](https://docs.zapier.com/platform/quickstart/c
 
 ## Authentication
 
-One field: a vatnode API key from the [dashboard](https://vatnode.dev/dashboard/api-keys), sent as `Authorization: Bearer <key>`.
+One field: a vatnode API key from the [dashboard](https://vatnode.dev/dashboard/api-keys), sent as `Authorization: Bearer <key>`. The connection is tested against `GET /v1/account`, which spends no quota and returns the account's plan, remaining quota, monitoring usage and billing state.
 
 Live keys (`vat_live_`) work everywhere. Test keys (`vat_test_`) validate the `XX` fixture numbers but cannot create monitoring subscriptions or webhooks — the trigger and **Monitor VAT Number** need a live key.
 

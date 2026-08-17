@@ -1,6 +1,6 @@
 const { BASE_URL } = require('./constants')
 
-const test = (z) => z.request({ url: `${BASE_URL}/v1/key` }).then((response) => response.data)
+const test = (z) => z.request({ url: `${BASE_URL}/v1/account` }).then((response) => response.data)
 
 module.exports = {
   type: 'custom',
@@ -15,5 +15,5 @@ module.exports = {
     },
   ],
   test,
-  connectionLabel: '{{label}} ({{environment}})',
+  connectionLabel: '{{key.label}} ({{key.environment}}, {{plan.name}})',
 }
