@@ -40,7 +40,7 @@ module.exports = {
         type: 'string',
         required: true,
         helpText:
-          'Two-letter country code as used by VIES, for example `DE`, `FR` or `EL` for Greece.',
+          'Two-letter ISO country code, for example `DE`, `FR` or `GR` for Greece. Note that Greek VAT numbers themselves carry the `EL` prefix.',
       },
     ],
     perform,
