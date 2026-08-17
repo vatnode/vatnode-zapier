@@ -1,0 +1,33 @@
+{
+  "name": "vatnode-zapier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "vatnode integration for Zapier — validate EU VAT numbers against VIES, monitor them, and look up VAT rates.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Iurii Rogulia",
+    "email": "iurii@rogulia.fi"
+  },
+  "homepage": "https://vatnode.dev/zapier",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vatnode/vatnode-zapier.git"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "prettier --check ."
+  },
+  "dependencies": {
+    "zapier-platform-core": "19.1.0"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "vitest": "3.2.4",
+    "zapier-platform-cli": "^19.1.0"
+  }
+}
