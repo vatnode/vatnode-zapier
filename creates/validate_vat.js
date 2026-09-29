@@ -40,6 +40,7 @@ module.exports = {
       companyAddress: '38 AVENUE JOHN F. KENNEDY, L-1855 LUXEMBOURG',
       companyStatus: 'active',
       registryCode: null,
+      taxId: null,
       consultationNumber: 'WAPIAAAAWlpaWloh',
       specialTerritory: null,
       countryVat: {
@@ -89,6 +90,7 @@ module.exports = {
       { key: 'companyAddress', label: 'Company Address' },
       { key: 'companyStatus', label: 'Company Status' },
       { key: 'registryCode', label: 'Registry Code' },
+      { key: 'taxId', label: 'Tax ID' },
       { key: 'consultationNumber', label: 'VIES Consultation Number' },
       { key: 'specialTerritory__name', label: 'Special Territory' },
       {
