@@ -52,6 +52,28 @@ module.exports = {
         parkingRate: null,
         vatNumberFormat: 'DE999999999',
         vatNumberPattern: '^DE[0-9]{9}$',
+        identifiers: {
+          registryAuthorityName: {
+            de: { name: 'Amtsgericht', abbr: null },
+            en: { name: 'local court', abbr: null },
+          },
+          registryName: {
+            de: { name: 'Handelsregister', abbr: null },
+            en: { name: 'commercial register', abbr: null },
+          },
+          registryCodeName: {
+            de: { name: 'Registernummer', abbr: null },
+            en: { name: 'register number', abbr: null },
+          },
+          taxIdName: {
+            de: { name: 'Wirtschafts-Identifikationsnummer', abbr: 'W-IdNr.' },
+            en: { name: 'Business Identification Number', abbr: null },
+          },
+          vatIdName: {
+            de: { name: 'Umsatzsteuer-Identifikationsnummer', abbr: 'USt-IdNr.' },
+            en: { name: 'VAT identification number', abbr: null },
+          },
+        },
         countryVatUpdatedAt: '2026-08-11',
       },
       verifiedAt: '2026-08-14T09:12:44.518Z',

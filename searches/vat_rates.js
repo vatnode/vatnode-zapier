@@ -50,12 +50,35 @@ module.exports = {
       isEU: true,
       vatName: 'Umsatzsteuer',
       vatAbbr: 'USt',
+      currency: 'EUR',
       standardRate: 19,
       reducedRates: [7],
       superReducedRate: null,
       parkingRate: null,
       vatNumberFormat: 'DE999999999',
       vatNumberPattern: '^DE[0-9]{9}$',
+      identifiers: {
+        registryAuthorityName: {
+          de: { name: 'Amtsgericht', abbr: null },
+          en: { name: 'local court', abbr: null },
+        },
+        registryName: {
+          de: { name: 'Handelsregister', abbr: null },
+          en: { name: 'commercial register', abbr: null },
+        },
+        registryCodeName: {
+          de: { name: 'Registernummer', abbr: null },
+          en: { name: 'register number', abbr: null },
+        },
+        taxIdName: {
+          de: { name: 'Wirtschafts-Identifikationsnummer', abbr: 'W-IdNr.' },
+          en: { name: 'Business Identification Number', abbr: null },
+        },
+        vatIdName: {
+          de: { name: 'Umsatzsteuer-Identifikationsnummer', abbr: 'USt-IdNr.' },
+          en: { name: 'VAT identification number', abbr: null },
+        },
+      },
       updatedAt: '2026-08-11',
     },
     outputFields: [
@@ -67,7 +90,16 @@ module.exports = {
       { key: 'parkingRate', label: 'Parking Rate', type: 'number' },
       { key: 'vatName', label: 'Local VAT Name' },
       { key: 'vatAbbr', label: 'Local VAT Abbreviation' },
+      { key: 'currency', label: 'Currency' },
       { key: 'vatNumberFormat', label: 'VAT Number Format' },
+      {
+        key: 'identifiers__registryAuthorityName__en__name',
+        label: 'Registry Authority (English)',
+      },
+      { key: 'identifiers__registryName__en__name', label: 'Registry Name (English)' },
+      { key: 'identifiers__registryCodeName__en__name', label: 'Registry Number Name (English)' },
+      { key: 'identifiers__taxIdName__en__name', label: 'Tax ID Name (English)' },
+      { key: 'identifiers__vatIdName__en__name', label: 'VAT ID Name (English)' },
       { key: 'updatedAt', label: 'Rates Updated At' },
     ],
   },
