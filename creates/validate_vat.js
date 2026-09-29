@@ -54,24 +54,24 @@ module.exports = {
         vatNumberPattern: '^DE[0-9]{9}$',
         identifiers: {
           registryAuthorityName: {
-            de: { name: 'Amtsgericht', abbr: null },
-            en: { name: 'local court', abbr: null },
+            de: 'Amtsgericht',
+            en: 'local court',
           },
           registryName: {
-            de: { name: 'Handelsregister', abbr: null },
-            en: { name: 'commercial register', abbr: null },
+            de: 'Handelsregister',
+            en: 'commercial register',
           },
           registryCodeName: {
-            de: { name: 'Registernummer', abbr: null },
-            en: { name: 'register number', abbr: null },
+            de: 'Registernummer',
+            en: 'register number',
           },
           taxIdName: {
-            de: { name: 'Wirtschafts-Identifikationsnummer', abbr: 'W-IdNr.' },
-            en: { name: 'Business Identification Number', abbr: null },
+            de: 'Wirtschafts-Identifikationsnummer',
+            en: 'Business Identification Number',
           },
           vatIdName: {
-            de: { name: 'Umsatzsteuer-Identifikationsnummer', abbr: 'USt-IdNr.' },
-            en: { name: 'VAT identification number', abbr: null },
+            de: 'Umsatzsteuer-Identifikationsnummer',
+            en: 'VAT identification number',
           },
         },
         countryVatUpdatedAt: '2026-08-11',
